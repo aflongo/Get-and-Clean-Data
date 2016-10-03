@@ -1,0 +1,26 @@
+Code Book
+Defination of Key Variables
+subject_test: table of subject_test.txt
+X_test: table of X_test.txt
+y_test: table of y_test.txt
+features: table of features.txt
+subject_train: table of subject_train.txt
+X_train: table of X_train.txt
+y_train: table of y_train
+Data_type: designates the data as either in the test or train dataset
+test: dataframe of all test data
+train: dataframe of all train data
+master: merged dataframe of test and train data
+nm:column names for master
+mn:columns within master with mean values
+std:columns within master with std values
+total:sorted vector containing indices of mn and std
+MSMaster: subset of master with mean and std values
+activity_labels: table of activity_labels.txt
+nam: column names for MSMaster
+U: vector of unique subject IDs
+MeanMaster: dataframe with values by subject and activity
+sub1-6: subsets of MSMaster for each activity
+a1-6:means by column of each value in the subsetted MSMaster
+r1-6: means joined with subject ID, activity, and data type
+output.txt: text file of MeanMaster 
